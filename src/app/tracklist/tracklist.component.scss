@@ -1,0 +1,32 @@
+$mobile-only: "only screen and (max-width : 768px)";
+
+ul{
+    border-top: 1px solid rgba(#ffffff, 0.2);
+    list-style: none;
+}
+li{
+    border-bottom: 1px solid rgba(#ffffff, 0.2);
+    & .track-wrap{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    & p{
+        margin-right: 20px;
+        // max-width: 100px;
+        @media #{$mobile-only}{
+            max-width: 100px;
+        }
+    }
+    & .player{
+        // background-color: transparent !important;
+        height: 40px;
+        width: 45px;
+        overflow: hidden;
+    }
+
+    &:last-of-type{
+        border-bottom: none;
+    }
+}

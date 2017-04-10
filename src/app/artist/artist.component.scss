@@ -1,0 +1,19 @@
+$mobile-only: "only screen and (max-width : 768px)";
+.artist-block{
+    display: flex;
+    flex-flow: nowrap row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+.artist-image{
+    margin-right: 10px;
+    & img{
+        width: 200px;
+        height: 200px;
+        @media #{$mobile-only}{
+            width: 100px;
+            height: 100px;
+        }
+    }
+}

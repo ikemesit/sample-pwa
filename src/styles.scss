@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700');
+
+@mixin sourcesans-regular(){
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+}
+
+@mixin sourcesans-regular(){
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+@mixin sourcesans-semibold(){
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+}
+
+@mixin sourcesans-bold(){
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    @include sourcesans-regular;
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #ffffff;
+}
+
+.header{
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
+    margin: 0;
+    top: 0;
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    & h4{
+        @include sourcesans-bold;
+    }
+}
+
+.track-block{
+    @include sourcesans-semibold;
+}

@@ -1,0 +1,14 @@
+<ul>
+    <li *ngFor="let track of tracks">
+        <div class="track-wrap">
+            <p>{{ track.name }}</p>
+            <!--<i class="material-icons">play_arrow</i>-->
+            <span class="player">
+                <audio controls>
+                    <source [src]="track.preview_url" type="audio/mpeg">
+                </audio>
+            </span>
+
+        </div>
+    </li>
+</ul>

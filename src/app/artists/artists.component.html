@@ -1,0 +1,6 @@
+<div class="listing-container" *ngIf="artistslist != null">
+  <div class="artist" *ngFor="let artist of artistslist; let i = index" (click)="showArtistTracks(artist?.id)">
+    <app-artist [artist]="artist"></app-artist>
+    <app-tracklist [tracks]="popularTracks" *ngIf="trackArtistId === artist.id"></app-tracklist>
+  </div>
+</div>

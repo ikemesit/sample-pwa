@@ -1,0 +1,12 @@
+.header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 10px;
+    box-shadow: 0px 0px 5px rgba(#000000, 0.8);
+    // background-color: #333c4e;
+    & h4{
+        color: #ffffff;
+    }
+}
