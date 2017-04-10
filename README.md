@@ -1,3 +1,5 @@
+Remember to `npm install` first before following the instructions below:
+-----------------------------------------------------------------------------
 # SamplePwa
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
